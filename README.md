@@ -1,12 +1,12 @@
 # Poker Hands
 ---
-#### Created by Jeremy Pasquino for Manifest Solutions coding assessment.
+#### Created by Jeremy Pasquino
 ##### Based on [this Kata/problem](http://codingdojo.org/kata/PokerHands/).
 
 ## How to use
 ---
 
-Simply launch PokerHands.exe, or open the solution. The program will ask you for both players' hands. Each card has a value and a suit. The suits being clubs, diamonds, hearts, and spades (C, D, H, S, respectively). The values being 2, 3, 4, 5, 6, 7, 8, 9, 10, jack, queen, king, ace (2, 3, 4, 5, 6, 7, 8, 9, T, J, Q, K, A, respectively).
+The program will ask you for both players' hands. Each card has a value and a suit. The suits being clubs, diamonds, hearts, and spades (C, D, H, S, respectively). The values being 2, 3, 4, 5, 6, 7, 8, 9, 10, jack, queen, king, ace (2, 3, 4, 5, 6, 7, 8, 9, T, J, Q, K, A, respectively).
 
 An example of a hand would be as follows: `2H TS AH 3D 5D`. Once you enter both players' hands, the program will print the winning player, and how they won.
 
