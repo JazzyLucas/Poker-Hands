@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace PokerHands
 {
@@ -6,14 +7,27 @@ namespace PokerHands
     {
         static void Main(string[] args)
         {
+            var argQueue = new Queue<string>();
+            foreach (var s in args)
+                argQueue.Enqueue(s);
             // Infinite loop so the game keeps replaying
             while (true)
             {
-                // Get input from user
-                Console.WriteLine("Enter Black's hand:");
-                string bPlayer = Console.ReadLine();
-                Console.WriteLine("Enter White's hand:");
-                string wPlayer = Console.ReadLine();
+                string bPlayer;
+                string wPlayer;
+                if (argQueue.Count < 2)
+                {
+                    // Get input from user
+                    Console.WriteLine("Enter Black's hand:");
+                    bPlayer = Console.ReadLine();
+                    Console.WriteLine("Enter White's hand:");
+                    wPlayer = Console.ReadLine();
+                }
+                else
+                {
+                    bPlayer = argQueue.Dequeue();
+                    wPlayer = argQueue.Dequeue();
+                }
 
                 // Split string into array of cards
                 string[] bCardStringArray = bPlayer.Split(" ");
